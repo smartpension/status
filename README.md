@@ -1,1 +1,1 @@
-Visit this site at https://smartpension.github.io/status/
+Visit this site at http://status.autoenrolment.co.uk/
