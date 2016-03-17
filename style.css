@@ -82,28 +82,27 @@ img {
 	background: #f4f5f6;
 	border-bottom: .1rem solid #d1d1d1;
 	display: block;
-	height: 5.2rem;
 	width: 100%;
 }
 
 .navigation .img {
 	position: relative;
 	top: .3rem;
-	height: 2.0rem;
+	height: 6.0rem;
+    margin: 1em 2em;
+    float: left;
 }
 .navigation .title,
 .navigation-title {
-	color: #606c76;
-	display: inline;
+	display: block;
 	font-family: 'Gotham Rounded A', 'Gotham Rounded B', 'Helvetica Neue', Arial, sans-serif;
 	line-height: 5.2rem;
-	font-size: 1.6rem;
-	padding: 0;
-	position: relative;
+	font-size: 2.2rem;
 	text-decoration: none;
+    position: relative;
+    margin: 1em 0 0 0;
+    color: #77ba9c; /* Secondary color */
 }
-
-
 
 .panel{
     color: white;
@@ -115,7 +114,7 @@ img {
 }
 
 .panel.operational, .label.operational{
-    background-color: #0DE877;
+    background-color: #77ba9c;
 }
 
 .panel.degraded.performance, .label.degraded.performance{
@@ -123,7 +122,7 @@ img {
 }
 
 .panel.investigating, .label.investigating{
-    background-color: #1192FC;
+    background-color: #2e9fcf;
 }
 
 .panel.major.outage, .label.major.outage{
@@ -155,7 +154,7 @@ ul.systems > li:last-child{
 }
 
 .status.operational{
-    color: #0DE877;
+    color: #77ba9c;
 }
 
 .status.degraded.performance{
@@ -163,7 +162,7 @@ ul.systems > li:last-child{
 }
 
 .status.investigating{
-     color: #1192FC;
+     color: #2e9fcf;
 }
 
 .status.major.outage{
@@ -186,7 +185,7 @@ h4{
 }
 
 #main{
-    padding-top: 8.5rem;
+    padding-top: 13rem;
 }
 
 .label{
@@ -206,4 +205,31 @@ h4{
 .incident .date{
     font-size: 2rem;
     font-weight: bold;
+}
+
+.link--source {
+    color: #77ba9c;
+}
+
+/* Mobile */
+@media screen and (max-width: 470px) {
+    .navigation .img {
+        float: none;
+        margin: 1em 0 0 0;
+        width: 10em;
+        height: auto;
+    }
+    .navigation {
+        text-align: center;
+    }
+
+    .navigation .title,
+    .navigation-title {
+        margin: 0 0 0.2em 0;
+    }
+
+
+    #main{
+        padding-top: 15rem;
+    }
 }
